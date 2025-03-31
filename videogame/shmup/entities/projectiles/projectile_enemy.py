@@ -2,9 +2,9 @@ from importlib import resources
 
 import pygame
 
-from entities.projectiles.projectile import Projectile
-from entities.projectiles.projectile_type import ProjectileType
-from config import cfg_item
+from shmup.entities.projectiles.projectile import Projectile
+from shmup.entities.projectiles.projectile_type import ProjectileType
+from shmup.config import cfg_item
 
 class ProjectileEnemy(Projectile):
     """Class representing an enemy projectile.

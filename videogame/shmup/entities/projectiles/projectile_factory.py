@@ -1,7 +1,7 @@
 
-from entities.projectiles.projectile_allied import ProjectileAllied
-from entities.projectiles.projectile_enemy import ProjectileEnemy
-from entities.projectiles.projectile_type import ProjectileType
+from shmup.entities.projectiles.projectile_allied import ProjectileAllied
+from shmup.entities.projectiles.projectile_enemy import ProjectileEnemy
+from shmup.entities.projectiles.projectile_type import ProjectileType
 
 class ProjectileFactory:
     """Factory class for creating projectiles."""

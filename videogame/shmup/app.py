@@ -1,7 +1,7 @@
 import pygame
 from moviepy.editor import VideoFileClip
-from states.statemanager import StateManager
-from config import cfg_item
+from shmup.states.statemanager import StateManager
+from shmup.config import cfg_item
 
 class App:
     def __init__(self):

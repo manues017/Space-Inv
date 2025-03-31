@@ -1,8 +1,8 @@
 import pygame
 import math
 from importlib import resources
-from entities.gameobject import GameObject
-from config import cfg_item
+from shmup.entities.gameobject import GameObject
+from shmup.config import cfg_item
 
 class LaserBeam(pygame.sprite.Sprite):
     """Class representing a laser beam sprite.
@@ -26,7 +26,7 @@ class LaserBeam(pygame.sprite.Sprite):
     def __init__(self, position):
         super().__init__()
         if LaserBeam.__image is None:
-            file_path = resources.files("assets.images").joinpath('laser-beam.png')
+            file_path = resources.files("shmup.assets.images").joinpath('laser-beam.png')
             with resources.as_file(file_path) as image_path:
                 image = pygame.image.load(image_path).convert_alpha()
                 image = pygame.transform.scale(image, (720, 100))  # Ajusta el tamaño según sea necesario

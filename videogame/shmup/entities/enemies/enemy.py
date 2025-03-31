@@ -2,9 +2,9 @@ import random
 
 import pygame
 
-from entities.gameobject import GameObject
-from events import Events
-from config import cfg_item
+from shmup.entities.gameobject import GameObject
+from shmup.events import Events
+from shmup.config import cfg_item
 
 
 class Enemy(GameObject):

@@ -1,7 +1,7 @@
 from importlib import resources
 import pygame
-from states.state import State
-from config import cfg_item
+from shmup.states.state import State
+from shmup.config import cfg_item
 
 class Intro(State):
     """
@@ -42,7 +42,7 @@ class Intro(State):
         """
         super().__init__()
 
-        file_path = resources.files("assets.fonts").joinpath('Sansation.ttf')
+        file_path = resources.files("shmup.assets.fonts").joinpath('Sansation.ttf')
         with resources.as_file(file_path) as font_image_path:
             self.font = pygame.font.Font(font_image_path, 32)
 

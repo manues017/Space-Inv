@@ -57,7 +57,7 @@ class Config:
         if Config.__instance is None:
             Config.__instance = self
 
-            file_path = resources.files("assets.config").joinpath('config.json')
+            file_path = resources.files("shmup.assets.config").joinpath('config.json')
             with resources.as_file(file_path) as config_data__path:
                 with open(config_data__path) as file:
                     self.data = json.load(file)

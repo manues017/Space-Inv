@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 import pygame
 
-from config import cfg_item
+from shmup.config import cfg_item
 
 class GameObject(pygame.sprite.Sprite, ABC):
     """

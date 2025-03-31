@@ -86,7 +86,7 @@ class BossShot(pygame.sprite.Sprite):
         """
         Loads and scales the image of the boss shot.
         """
-        file_path = resources.files("assets.images").joinpath('boss-shot.png')
+        file_path = resources.files("shmup.assets.images").joinpath('boss-shot.png')
         with resources.as_file(file_path) as image_path:
             image = pygame.image.load(image_path).convert_alpha()
             BossShot.__image = pygame.transform.scale(image, (10, 40))  # Adjust size as necessary

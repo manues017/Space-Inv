@@ -1,5 +1,5 @@
 import sys
-from app import App
+from shmup.app import App
 
 def main(args=None):
     if args is None:

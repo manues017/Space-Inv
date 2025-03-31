@@ -1,10 +1,10 @@
 import pygame
-from entities.gameobject import GameObject
-from config import cfg_item
+from shmup.entities.gameobject import GameObject
+from shmup.config import cfg_item
 from importlib import resources
-from events import Events
-from entities.projectiles.laser_beam import LaserBeam
-from entities.projectiles.boss_shot import BossShot
+from shmup.events import Events
+from shmup.entities.projectiles.laser_beam import LaserBeam
+from shmup.entities.projectiles.boss_shot import BossShot
 import random
 
 class Boss(GameObject):

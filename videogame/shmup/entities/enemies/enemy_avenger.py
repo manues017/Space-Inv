@@ -3,8 +3,8 @@ import random
 
 import pygame
 
-from entities.enemies.enemy import Enemy
-from config import cfg_item
+from shmup.entities.enemies.enemy import Enemy
+from shmup.config import cfg_item
 
 
 class EnemyAvenger(Enemy):

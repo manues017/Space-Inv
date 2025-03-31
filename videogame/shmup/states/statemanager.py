@@ -1,7 +1,7 @@
 import pygame
 
-from states.intro import Intro
-from states.gameplay import GamePlay
+from shmup.states.intro import Intro
+from shmup.states.gameplay import GamePlay
 
 class StateManager:
 

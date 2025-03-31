@@ -2,10 +2,10 @@ from importlib import resources
 
 import pygame
 
-from assets.flipbook import FlipBook
-from entities.gameobject import GameObject
-from config import cfg_item
-from events import Events
+from shmup.assets.flipbook import FlipBook
+from shmup.entities.gameobject import GameObject
+from shmup.config import cfg_item
+from shmup.events import Events
 
 class Explosion(GameObject):
     """Represents an explosion animation in the game.

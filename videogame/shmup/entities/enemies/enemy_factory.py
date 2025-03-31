@@ -1,7 +1,7 @@
 from enum import Enum
 
-from entities.enemies.enemy_avenger import EnemyAvenger
-from entities.enemies.enemy_raptor import EnemyRaptor
+from shmup.entities.enemies.enemy_avenger import EnemyAvenger
+from shmup.entities.enemies.enemy_raptor import EnemyRaptor
 
 class EnemyType(Enum):
     Avenger = 0,

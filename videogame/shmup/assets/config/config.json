@@ -2,8 +2,8 @@
     "game" : {
         "screen_size" : [480, 640],
         "screen_size_min" : 0,
-        "background_video": "assets/videos/background_video.mp4",
-        "background_music": "assets/music/ambient_music.mp3"
+        "background_video": "shmup/assets/videos/background_video.mp4",
+        "background_music": "shmup/assets/music/ambient_music.mp3"
 
 
     },
@@ -22,11 +22,11 @@
         },
         "projectiles" : {
             "allied" : {
-                "image_file" : ["assets.images", "projectile_allied.png"],
+                "image_file" : ["shmup.assets.images", "projectile_allied.png"],
                 "velocity" : [0.0, -0.2]
             },
             "enemy" : {
-                "image_file" : ["assets.images", "projectile_avenger.png"],
+                "image_file" : ["shmup.assets.images", "projectile_avenger.png"],
                 "velocity" : [0.0, 0.2]
             }
         },
@@ -35,12 +35,12 @@
             "spawn_probability" : 0.02,
             "enemy_padding" : 0,
             "raptor" : {
-                "image_file" : ["assets.images", "raptor.png"],
+                "image_file" : ["shmup.assets.images", "raptor.png"],
                 "velocity_range" : [0.1,0.4],
                 "fire_probability" : 0.0
             },
             "avenger" : {
-                "image_file" : ["assets.images", "avengar.png"],
+                "image_file" : ["shmup.assets.images", "avengar.png"],
                 "velocity_range" : [0.1,0.2],
                 "fire_probability" : 0.02
             }
@@ -48,15 +48,15 @@
         
         },
         "explosion" : {
-            "image_file" : ["assets.images", "explosion.png"],
+            "image_file" : ["shmup.assets.images", "explosion.png"],
             "size" : [4,4],
             "time_per_sequence" : 30
         },
 
         "boss": {
-            "image_file": ["assets.images", "boss.png"],
+            "image_file": ["shmup.assets.images", "boss.png"],
             "health": 100,
-            "laser_beam": ["assets.images", "laser_beam.png"],
+            "laser_beam": ["shmup.assets.images", "laser_beam.png"],
             "attack_interval": 500
 
         }

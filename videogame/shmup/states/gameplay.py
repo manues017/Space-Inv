@@ -1,18 +1,18 @@
 import random
 import pygame
 from moviepy.editor import VideoFileClip
-from states.state import State
-from entities.rendergroup import RenderGroup
-from entities.hero import Hero
-from events import Events
-from entities.projectiles.projectile_factory import ProjectileFactory
-from entities.projectiles.projectile_type import ProjectileType
-from config import cfg_item
-from entities.enemies.enemy_factory import EnemyFactory, EnemyType
-from entities.explosion import Explosion
-from entities.movement_type import MovementType
-from entities.enemies.boss import Boss
-from entities.projectiles.laser_beam import LaserBeam
+from shmup.states.state import State
+from shmup.entities.rendergroup import RenderGroup
+from shmup.entities.hero import Hero
+from shmup.events import Events
+from shmup.entities.projectiles.projectile_factory import ProjectileFactory
+from shmup.entities.projectiles.projectile_type import ProjectileType
+from shmup.config import cfg_item
+from shmup.entities.enemies.enemy_factory import EnemyFactory, EnemyType
+from shmup.entities.explosion import Explosion
+from shmup.entities.movement_type import MovementType
+from shmup.entities.enemies.boss import Boss
+from shmup.entities.projectiles.laser_beam import LaserBeam
 from importlib import resources
 
 
@@ -37,7 +37,7 @@ class GamePlay(State):
 
         self.next_state = "Intro"
         
-        explosion_sound_path = resources.files("assets.sounds").joinpath('explosion.mp3')
+        explosion_sound_path = resources.files("shmup.assets.sounds").joinpath('explosion.mp3')
         with resources.as_file(explosion_sound_path) as sound_path:
             self.__explosion_sound = pygame.mixer.Sound(sound_path)
 

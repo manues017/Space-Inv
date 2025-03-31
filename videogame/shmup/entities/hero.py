@@ -2,9 +2,9 @@ from importlib import resources
 
 import pygame
 
-from config import cfg_item
-from entities.gameobject import GameObject
-from events import Events
+from shmup.config import cfg_item
+from shmup.entities.gameobject import GameObject
+from shmup.events import Events
 from .movement_type import MovementType
 
 class Hero(GameObject):
@@ -34,7 +34,7 @@ class Hero(GameObject):
         super().__init__()
         
         # Load the hero image
-        file_path = resources.files("assets.images").joinpath('hero.png')
+        file_path = resources.files("shmup.assets.images").joinpath('hero.png')
         with resources.as_file(file_path) as hero_image_path:
             self._image = pygame.image.load(hero_image_path).convert_alpha()
         
@@ -55,7 +55,7 @@ class Hero(GameObject):
         self.__speed = 0.3
         self.__cool_down = 0
         
-        sound_path = resources.files("assets.sounds").joinpath('shot.mp3')
+        sound_path = resources.files("shmup.assets.sounds").joinpath('shot.mp3')
         with resources.as_file(sound_path) as shoot_sound_path:
             self.__shoot_sound = pygame.mixer.Sound(shoot_sound_path)
 
