@@ -37,7 +37,7 @@ python -m shmup
 
 
 ## 🖼️ Capturas de pantalla
-![Gameplay](shmup/assets/images/gameplay1.gif)
+![Gameplay](videogame\shmup\assets\images\gameplay1.gif)
 
 
 # 📫 Contacto:
