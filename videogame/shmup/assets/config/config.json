@@ -1,0 +1,64 @@
+{
+    "game" : {
+        "screen_size" : [480, 640],
+        "screen_size_min" : 0,
+        "background_video": "assets/videos/background_video.mp4",
+        "background_music": "assets/music/ambient_music.mp3"
+
+
+    },
+    "states" : {
+        "intro" : {
+            "text" : "My Super Videogame. Press Any Key To Continue.",
+            "position" : [100, 200]
+        }
+    },
+    "entities" : {
+        "hero" : {
+            "speed" : 0.3,
+            "cool_down_time" : 300,
+            "height" : 80,
+            "width" : 30
+        },
+        "projectiles" : {
+            "allied" : {
+                "image_file" : ["assets.images", "projectile_allied.png"],
+                "velocity" : [0.0, -0.2]
+            },
+            "enemy" : {
+                "image_file" : ["assets.images", "projectile_avenger.png"],
+                "velocity" : [0.0, 0.2]
+            }
+        },
+        "enemies" : {
+            "delta_oos" : 5,
+            "spawn_probability" : 0.02,
+            "enemy_padding" : 0,
+            "raptor" : {
+                "image_file" : ["assets.images", "raptor.png"],
+                "velocity_range" : [0.1,0.4],
+                "fire_probability" : 0.0
+            },
+            "avenger" : {
+                "image_file" : ["assets.images", "avengar.png"],
+                "velocity_range" : [0.1,0.2],
+                "fire_probability" : 0.02
+            }
+
+        
+        },
+        "explosion" : {
+            "image_file" : ["assets.images", "explosion.png"],
+            "size" : [4,4],
+            "time_per_sequence" : 30
+        },
+
+        "boss": {
+            "image_file": ["assets.images", "boss.png"],
+            "health": 100,
+            "laser_beam": ["assets.images", "laser_beam.png"],
+            "attack_interval": 500
+
+        }
+    }
+}
